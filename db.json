@@ -1,0 +1,20 @@
+{
+  "acoes": [
+    {
+      "id": 314,
+      "nome": "Itau SA",
+      "valor": "100000",
+      "data": "2023-06-01",
+      "dividento": true
+    }
+  ],
+  "empresas": [
+    {
+      "id": 1,
+      "nome": "Itau SA",
+      "cnpj": "111111111",
+      "tipoEmpresa": "privada",
+      "data": "29/05/2023"
+    }
+  ]
+}
