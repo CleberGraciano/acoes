@@ -10,11 +10,13 @@ import { EmpresasModule } from './empresas/empresas.module';
 import { AcoesModule } from './acoes/acoes.module';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     HomeComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     TemplateModule,
     EmpresasModule,
     AcoesModule,
-    HttpClientModule
+    HttpClientModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,12 +5,14 @@ import { AcoesRoutingModule } from './acoes-routing.module';
 import { AcoesFormComponent } from './acoes-form/acoes-form.component';
 import { AcoesListComponent } from './acoes-list/acoes-list.component';
 import { FormsModule } from '@angular/forms';
+import { TituloComponent } from '../components/titulo/titulo.component';
 
 
 @NgModule({
   declarations: [
     AcoesFormComponent,
-    AcoesListComponent
+    AcoesListComponent,
+    TituloComponent
   ],
   imports: [
     CommonModule,

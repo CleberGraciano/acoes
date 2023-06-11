@@ -1,4 +1,4 @@
-<h1 class="mt-4">Ações</h1>
+<app-titulo [nome]="titulo"></app-titulo>
     <ol class="breadcrumb mb-4">
     <li class="breadcrumb-item active">{{ acao.nome ? 'Edição' : 'Cadastro' }}</li>
 </ol>
@@ -28,7 +28,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                    <label>Nome:</label> 
-                   <input type="text" class="form-control" [ngModel] = "acao.nome" name="nome"  />
+                   <input type="text" class="form-control" [(ngModel)] = "acao.nome" name="nome"  />
                 </div>
             </div>
         </div>
@@ -67,9 +67,9 @@
 
         <div class="row">
             <div class="col-md-12">
-                <button type="submit" class="btn btn-success" *ngIf="!acao.nome">
+                <button type="submit" class="btn btn-success" *ngIf="!acao.id">
                     <i class="fa fa-save"></i>&nbsp;Salvar</button>
-                <button type="submit" class="btn btn-primary" *ngIf="acao.nome">
+                <button type="submit" class="btn btn-primary" *ngIf="acao.id">
                 <i class="fa fa-sync-alt"></i>&nbsp;Atualizar</button>
                   
                     <button type="button"  class="btn btn-danger ml-2" (click)="voltarParaListagem()">
@@ -81,5 +81,7 @@
         </div>
         
     </form>
+
+
 
 </div>

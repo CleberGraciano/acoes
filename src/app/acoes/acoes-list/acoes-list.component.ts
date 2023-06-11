@@ -13,6 +13,9 @@ export class AcoesListComponent implements OnInit {
   acaoSelecionada : Acao = new Acao();
   mensagemSucesso : string = "";
   mensagemErro: string = "";
+  titulo: string = 'Minhas Ações';
+
+
 
   constructor(private service: AcoesService, 
     private router: Router) { }

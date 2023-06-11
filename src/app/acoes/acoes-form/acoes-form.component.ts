@@ -14,6 +14,8 @@ export class AcoesFormComponent implements OnInit {
   success : boolean = false;
   errors: String[] = [];
   id: number = 0;
+  titulo: string = 'Minhas Ações';
+  msg: string = 'Ação Salva com sucesso!!'
   
   
   constructor(private service: AcoesService, private router: Router, private activatedRoute:ActivatedRoute) { 
@@ -21,6 +23,10 @@ export class AcoesFormComponent implements OnInit {
     this.acao = new Acao();
 
     
+  }
+
+  recebeMensagem (respostaSucesso : string) {
+    console.log('Foi emitido o evento e chegou no pai >>>> ', respostaSucesso);
   }
 
 

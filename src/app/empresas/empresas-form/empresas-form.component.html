@@ -1,1 +1,77 @@
-<p>empresas-form works!</p>
+<app-titulo [nome]="titulo"></app-titulo>
+    <ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">{{ empresa.nome ? 'Edição' : 'Cadastro' }}</li>
+</ol>
+<div class="container">
+    <form #empresaForm="ngForm" (ngSubmit)="onSubmit()">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success" role="alert" *ngIf=" success == true">
+                    Ação Salva/Atualizado com sucesso!!
+                </div>
+                <div class="alert alert-danger" role="alert" *ngFor=" let erro of errors">
+                    {{ erro }}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" *ngIf="acao.id">
+            <div class="col-md-6">
+                <div class="form-group">
+                   <label>ID:</label> 
+                   <input type="text" class="form-control" disabled="true" [ngModel]="empresa.id" name="id" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                   <label>Nome:</label> 
+                   <input type="text" class="form-control" [(ngModel)] = "empresa.nome" name="nome"  />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                   <label>Nome:</label> 
+                   <input type="text" class="form-control" [(ngModel)] = "empresa.cnpj" name="nome"  />
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                   <label>Data: *</label> 
+                   <input type="text" class="form-control" [(ngModel)] ="empresa.tipoEmpresa" name="data" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                   <label>Data: *</label> 
+                   <input type="text" class="form-control" [(ngModel)] ="empresa.data" name="data" />
+                </div>
+            </div>
+        </div>    
+
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-success" *ngIf="!acao.id">
+                    <i class="fa fa-save"></i>&nbsp;Salvar</button>
+                <button type="submit" class="btn btn-primary" *ngIf="acao.id">
+                <i class="fa fa-sync-alt"></i>&nbsp;Atualizar</button>
+                  
+                    <button type="button"  class="btn btn-danger ml-2" (click)="voltarParaListagem()">
+                        
+                        <i class="fa fa-arrow-left"></i>&nbsp;Listagem
+                    </button>
+            </div>
+            
+        </div>
+        
+    </form>
+
+
+
+</div>

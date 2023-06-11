@@ -5,6 +5,13 @@
       "nome": "Itau SA",
       "valor": "100000",
       "data": "2023-06-01",
+      "dividento": false
+    },
+    {
+      "id": 141,
+      "nome": "IRBR3",
+      "valor": 0,
+      "data": "2023-06-10T17:34:38.882Z",
       "dividento": true
     }
   ],
