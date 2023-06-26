@@ -1,0 +1,18 @@
+<p>Exemplo de Pipes</p>
+
+<!-- Transforma Texto em Letras Maiusculas -->
+<p>Título: {{ livro.titulo | uppercase }}</p>
+<!-- Transforma o texto em numero e como parametro definimos a quantidade de casas decimais
+numero de casas decimais a esquerda | 1-2: minimo e maximo 2 numeros a direita -->
+<p>Estrelas : {{ livro.rating | number:'2.1-2' }}</p>
+<!-- Transforma o texto em número (Não há mudança visivél) -->
+<p>Paginas: {{ livro.numeroPaginas | number }}</p>
+<!-- Transforma o numero em moeda o Padrão é Dolar -->
+<p>Preço: {{ livro.preco | currency:'BRL'}}</p>
+<!-- Transforma o texto em data, o padrão é americano -->
+<p>Lancamento: {{ livro.dataLancamento | date:'dd/MM/yyyy' }}</p>
+<p>Url: {{ livro.url }}</p>
+
+<br>
+<!-- Trnsforma a exibição do objeto em json -->
+<p>Livro: {{ livro | json }}</p>

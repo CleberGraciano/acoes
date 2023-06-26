@@ -9,12 +9,17 @@ import { TemplateModule } from './template/template.module';
 import { EmpresasModule } from './empresas/empresas.module';
 import { AcoesModule } from './acoes/acoes.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PipesExemplosComponent } from './components/pipes-exemplos/pipes-exemplos.component';
+import { ObservableExemploComponent } from './components/observable-exemplo/observable-exemplo.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    HomeComponent
+    HomeComponent,
+    PipesExemplosComponent,
+    ObservableExemploComponent
   ],
   imports: [
     BrowserModule,

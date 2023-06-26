@@ -5,12 +5,14 @@ import { AcoesListComponent } from './acoes-list/acoes-list.component';
 import { LayoutComponent } from '../layout/layout.component';
 
 const routes: Routes = [
-  { path: 'acoes', component: LayoutComponent, children: [
-    { path: 'form', component:  AcoesFormComponent},
-    { path: 'form/:id', component:  AcoesFormComponent},
-    { path: 'lista', component: AcoesListComponent},
-    { path: '',redirectTo: '/acoes/lista', pathMatch:'full'}
-  ]}
+  {
+    path: 'acoes', component: LayoutComponent, children: [
+      { path: 'form', component: AcoesFormComponent },
+      { path: 'form/:id', component: AcoesFormComponent },
+      { path: 'lista', component: AcoesListComponent },
+      { path: '', redirectTo: '/acoes/lista', pathMatch: 'full' }
+    ]
+  }
 
 ];
 

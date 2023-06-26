@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { EmpresasRoutingModule } from './empresas-routing.module';
 import { EmpresasListComponent } from './empresas-list/empresas-list.component';
 import { EmpresasFormComponent } from './empresas-form/empresas-form.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     EmpresasRoutingModule,
-    FormsModule
+    ReactiveFormsModule,
+    BsDatepickerModule.forRoot()
   ],
   exports: [
     EmpresasListComponent,

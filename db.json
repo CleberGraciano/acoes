@@ -1,20 +1,21 @@
 {
   "acoes": [
     {
-      "id": 314,
+      "id": 590,
       "nome": "Itau SA",
-      "valor": "100000",
-      "data": "2023-06-01",
-      "dividento": true
+      "valor": "25.50",
+      "data": "Sat Jun 17 2023 16:39:02 GMT-0300 (Horário Padrão de Brasília)",
+      "dividento": true,
+      "empresa": "Itau SA"
     }
   ],
   "empresas": [
     {
-      "id": 1,
-      "nome": "Itau SA",
-      "cnpj": "111111111",
-      "tipoEmpresa": "privada",
-      "data": "29/05/2023"
+      "id": 597,
+      "nome": "Banco do Brasil",
+      "cnpj": "00.000.000/0001-91",
+      "tipoEmpresa": "publica",
+      "data": "2023-06-17T19:41:25.929Z"
     }
   ]
 }
