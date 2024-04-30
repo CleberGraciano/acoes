@@ -68,7 +68,7 @@ Angular version 16.0.1
 <table>
   
   <tr>
-    <td align="center"><a href="https://github.com/prgernhard/acoes target="_blank"><br /><sub><b>Paulo Raimar Gernhard</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/CleberGraciano/" target="_blank"><br /><sub><b>Cleber Graciano</b></sub></a><br /></td>
   
   </tr>
 </table>
